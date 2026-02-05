@@ -1,5 +1,3 @@
-alert("script.js is running");
-
 let rounds = '';
 let p = '2';
 let r = '0';
