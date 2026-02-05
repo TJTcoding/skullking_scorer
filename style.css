@@ -1,0 +1,109 @@
+*{
+  touch-action: manipulation;
+}
+body{
+  background-color:#B0C4DE;
+}
+
+tr, td {
+  border: 2px solid #000;
+  padding: 5px;
+}
+
+tr:nth-child(1){background-color: gold}
+tr:nth-child(2){background-color: silver}
+tr:nth-child(3){background-color: SandyBrown}
+tr:nth-child(4){background-color: #B0C4AE}
+tr:nth-child(5){background-color: #B0C4AE}
+tr:nth-child(6){background-color: #B0C4AE}
+tr:nth-child(7){background-color: #B0C4AE}
+tr:nth-child(8){background-color: #B0C4AE}
+
+.submit {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.inputs {
+  border: 2px solid #000;
+  border-radius: 5px;
+  max-width: 300px;
+  margin: auto;
+  padding: 5px;
+}
+.gameStart {
+  border: 2px solid #000;
+  border-radius: 5px;
+  max-width: 300px;
+  margin: auto;
+  padding: 5px;
+}
+#numberPlay {
+  border: 2px solid #000;
+  border-radius: 5px;
+  max-width: 300px;
+  margin: auto;
+  padding: 5px;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 500px;
+}
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px gold;
+}
+h2 {
+  text-align: center;
+  text-shadow: 2px 2px gold;
+}
+.plusMinus {
+  border: 2px solid LightSlateGray;
+  border-radius: 8px;
+  width: 15%;
+  height: 10%;
+  color: MidnightBlue;
+}
+.plusMinus:active {
+  transform: translateY(2px);
+}
+input[type=text] {
+  padding: 3px 3px;
+  margin: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+input[type=number] {
+  border-radius: 5px;
+}
+select {
+  border-radius: 5px;
+  padding: 3px 3px;
+}
+.bigButton {
+  background-color: Gainsboro;
+  color: MidnightBlue;
+  font-size: 15px;
+  padding: 7px 7px;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 0 3px #999;
+}
+.bigButton:active {
+  transform: translateY(3px);
+}
+.graph {
+  margin: auto;
+  background-color: #B0C4DE;
+}
+#restart {
+  color: tomato;
+  border-color: tomato;
+}
+#restart:hover, #restart:active {
+  color: crimson;
+  border-color: crimson;
+  background-color: LightCoral;
+}

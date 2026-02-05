@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skullking Scorer</title>
+<<link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.plot.ly/plotly-3.0.0.min.js" charset="utf-8"></script>
+<body>
+<h1 id="welcome">Welcome to the ultimate Skullking scorekeeper!!!</h1>
+<h2 id="getStarted">Get started below</h2>
+
+<!--Select number of players(2-8) -->
+<div id="numberPlay">
+<label>Set number of players</label><br>
+<button class='plusMinus' id='removePlayer' onclick='let a = (document.getElementById("players").value * 1);
+                if (a > 2) {document.getElementById("players").value = (a - 1);} setPlayers();'>-</button>
+<input type="number" id="players" name="players" min="2" max="8" value="2">
+<button class='plusMinus' id='addPlayer' onclick='let a = (document.getElementById("players").value * 1);
+                if (a < 8) {document.getElementById("players").value = (a +  1);} setPlayers();'>+</button>
+</div>
+<!--Paragraph for game input-->
+<p id="playing"></p>
+<!--game start form parapgraph-->
+<p id="test"></p>
+<!--divs for stat graphs at the end of the game-->
+<div class="graph" id="plotsGraph"></div>
+<div class="graph" id="scoresPlot" style="width:100%;max-width:500px"></div>
+<div class="graph" id="tricksPie" style="width:100%;max-width:500px"></div>
+<div class="graph" id="trickBidComp" style="width:100%;max-width:500px"></div>
+<div class="graph" id="bonusPlot" style="width:100%;max-width:500px"></div>
+<div class="graph" style="max-width:300px"><br><button class="bigButton" id="restart" onclick="restart();">Restart Game</button></div>
+<script src="script.js"></script>
+</body>
+</html>
