@@ -1,13 +1,13 @@
-const CACHE_NAME = "skullking-cache-v1";
+const CACHE_NAME = "skullking-cache-v2";
 
 const FILES_TO_CACHE = [
-  "/",
-  "/index.html",
-  "/about.html",
-  "/manifest.json",
-  "/assets/css/style.css",
-  "/assets/js/script.js"
+  "./",
+  "./index.html",
+  "./manifest.json",
+  "./assets/css/style.css",
+  "./assets/js/script.js"
 ];
+
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
